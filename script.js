@@ -1,5 +1,14 @@
 function validEmail(str) {
-  //your JS code here.
+   if(str.length==0){
+	   return false;
+   }
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(emailRegex.test(str)){
+	  return true;
+  }
+	return false;
+
+	
 }
 
 // Do not change the code below.
